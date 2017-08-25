@@ -1,7 +1,7 @@
 <?php
-$acl = new ACL ();
-if ($acl->hasPermission ( getModuleMeta ( "metadata_viewer", "metadata_viewer" ) ) and ViewBag::get ( "title" ) and ViewBag::get ( "content" )) {
-	?><p>
+$acl = new ACL();
+if ($acl->hasPermission(getModuleMeta("metadata_viewer", "admin_permission")) and ViewBag::get("title") and ViewBag::get("content")) {
+    ?><p>
 	<a href="<?php echo ModuleHelper::buildAdminURL("metadata_viewer");?>"
 		class="btn btn-default"><?php translate("back");?></a>
 </p>
@@ -9,5 +9,5 @@ if ($acl->hasPermission ( getModuleMeta ( "metadata_viewer", "metadata_viewer" )
 <pre><?php Template::escape(ViewBag::get("content"));?></pre>
 <?php
 } else {
-	noperms ();
+    noperms();
 }
