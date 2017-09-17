@@ -14,7 +14,7 @@ class MetadataViewer extends Controller {
 		$module = Request::getVar ( "module" );
 		$theme = Request::getVar ( "theme" );
 		if ($module) {
-			$path = ModuleHelper::buildModuleRessourcePath ( basename ( $this->moduleName ), "metadata.json" );
+			$path = ModuleHelper::buildModuleRessourcePath ( basename($module), "metadata.json" );
 			if (file_exists ( $path )) {
 				ViewBag::set ( "title", $module );
 				ViewBag::set ( "content", file_get_contents ( $path ) );
