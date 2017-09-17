@@ -6,7 +6,7 @@ if ($acl->hasPermission(getModuleMeta("metadata_viewer", "admin_permission")) an
 		class="btn btn-default"><?php translate("back");?></a>
 </p>
 <h3><?php Template::escape(ViewBag::get("title"));?></h3>
-<pre><?php Template::escape(ViewBag::get("content"));?></pre>
+<textarea class="codemirror" data-mimetype="application/json" readonly><?php Template::escape(ViewBag::get("content"));?></textarea>
 <?php
 } else {
     noperms();
