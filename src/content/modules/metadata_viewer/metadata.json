@@ -1,7 +1,7 @@
 {
 	"source": "extend",
 	"embed": false,
-	"version": "0.7",
+	"version": "0.8",
 	"controllers": {
 		"MetadataViewer": "MetadataViewer.php"
 	},
