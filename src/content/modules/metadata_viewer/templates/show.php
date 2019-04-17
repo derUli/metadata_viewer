@@ -8,6 +8,10 @@ if ($acl->hasPermission(getModuleMeta("metadata_viewer", "admin_permission")) an
 <h3><?php Template::escape(ViewBag::get("title"));?></h3>
 <textarea class="codemirror" data-mimetype="application/json" readonly><?php Template::escape(ViewBag::get("content"));?></textarea>
 <?php
+
+BackendHelper::enqueueEditorScripts();
+combinedScriptHtml();
+
 } else {
     noperms();
 }
