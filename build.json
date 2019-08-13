@@ -1,6 +1,6 @@
 {
 	"id": "metadata_viewer",
-	"version": "0.9",
+	"version": "1.0",
 	"description": "View metadata.json files",
 	"categories": [
 		"developer",
@@ -8,5 +8,5 @@
 		"modules",
 		"themes"
 	],
-	"compatible_from": "2019.2.6"
+	"compatible_from": "2019.3.1"
 }

@@ -13,7 +13,7 @@
 <?php }?>
 </ol>
 <h3><?php translate("installed_designs");?></h3>
-<?php $themes = getThemesList();?>
+<?php $themes = getAllThemes();?>
 <ol>
 <?php foreach($themes as $theme){?>
 <?php
